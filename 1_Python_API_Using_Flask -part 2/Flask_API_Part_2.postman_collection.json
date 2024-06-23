@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "a0afea07-a2ba-4cc0-b5e9-4f6ddb194341",
+		"name": "Flask_API_Part_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6763199"
+	},
+	"item": [
+		{
+			"name": "game_api_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5571/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5571",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_api_console(XBOX)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5571/api?console=XBOX",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5571",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "console",
+							"value": "XBOX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_api_console (PS5)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5571/api?console=PS5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5571",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "console",
+							"value": "PS5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_api_console (Nintendo Switch)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5571/api?console=Nintendo Switch",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5571",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "console",
+							"value": "Nintendo Switch"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_api_console (PS5) POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5571/add?console=PS5&name=Helldivers™ 2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5571",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "console",
+							"value": "PS5"
+						},
+						{
+							"key": "name",
+							"value": "Helldivers™ 2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_api_console (Nintendo Switch) POST_body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"console\": \"Nintendo Switch\",\r\n       \"name\": \"Animal Crossing™: New Horizons\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5571/addjson",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5571",
+					"path": [
+						"addjson"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
