@@ -19,10 +19,12 @@ games=[{'console': 'PS5',
       {'console': 'Nintendo Switch',
        'name': "Mario Kart™ 8 Deluxe"}]
 
-# @app.route("/api", methods =['GET'])
-# def  run_app():
-#     return jsonify(games)
+# All games
+@app.route("/all", methods =['GET'])
+def  run_app():
+    return jsonify(games)
 
+# Specific console
 @app.route("/api", methods =['GET'])
 def  getGames():
     console=request.args['console']
