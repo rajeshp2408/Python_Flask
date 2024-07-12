@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+Result Page
+{% endblock %}
+
+{% block content %}
+ <!-- main section -->
+    <div class="main-div">
+        <h1>Check URL:</h1>
+        <div class="form-div">
+        	
+	    <!-- {{url}} -->
+        {% if status == 'UP' %}
+        <p style="color: green; font-size: 16px;">The site {{url}} is <strong>UP</strong></p>
+        {% elif status == 'DOWN' %}
+            <p style="color: red; font-size: 16px;">The site {{url}} is <strong>DOWN</strong></p>
+        {% else %}
+            <p style="color: purple; font-size: 16px;">The site {{url}} is <strong>Exception!!</strong></p>
+        {% endif %}
+
+        </div>
+    </div>
+{% endblock %}

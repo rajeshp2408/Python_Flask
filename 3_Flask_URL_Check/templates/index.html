@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+ <!-- main section -->
+    <div class="main-div">
+        <h1>Check URL:</h1>
+        <div class="form-div">
+            <form action="{{url_for('check')}}" method="post">
+                <p>URL:</p>
+                <input type="text" name="url" placeholder="Enter URL .." required="required">
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+</div>
+{% endblock %}

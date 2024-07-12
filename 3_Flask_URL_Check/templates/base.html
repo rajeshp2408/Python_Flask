@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename ='styles.css')}}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <def class="container">
+
+        <!-- Header Sections  -->
+        <header class="header-div">
+            <!-- Logo -->
+            <div class="logo-div">
+                <p><span>Raj</span>esh</p>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="nav-div">
+                <ul class="nav_list">
+                    <li><a href="{{url_for('home_page')}}" class="nav__link">Home</a></li>
+                    <li><a href="#" class="nav__link">Check</a></li>
+                </ul>
+            </nav>
+            <!-- Button or others -->
+        </header>
+
+        <!-- main section -->
+        <!-- <div class="main-div">
+            <h1>Check URL:</h1>
+            <div class="form-div"> -->
+                <!-- form to submit -->
+                <!-- <form action="#" method="post">
+                    <p>URL:</p>
+                    <input type="text" name="url" placeholder="Enter URL .." required="required">
+                    <button type="submit">Submit</button>
+                </form> -->
+
+                {% block content %}
+                {% endblock %}
+            <!-- </div>
+        </div> -->
+
+
+
+
+        <!-- Footer Sections -->
+        <footer class="footer-div">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Company Name. All rights reserved.</p>
+        </footer>
+
+    </def>
+</body>
+</html>

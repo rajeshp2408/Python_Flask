@@ -1,0 +1,180 @@
+/* Base Style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Reset CSS */
+*{  
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/* common changes */
+body{
+    background-color: rgb(153, 184, 184);
+}
+
+.container{
+    width: 100%;
+    
+}
+/* =====================Header =====================*/
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(144, 135, 135);
+    color: aliceblue;
+}
+
+/* =====================Header =====================*/
+.header-div{
+    width: inherit;
+    min-height: 75px;
+
+    padding: 30px 20px;
+}
+
+.logo-div{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.logo-div span{
+    color: red;
+    font-size: 20px;
+}
+/* =====================Nav =====================*/
+.nav-div{
+
+}
+.nav_list{
+    list-style: none;
+
+}
+.nav_list li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+
+}
+.nav_list li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/* Hover Navigation */
+
+.nav__link{
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.4s;
+    position: relative;
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav__link::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #0071e3;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav__link:hover::after{
+    opacity: 1;
+}
+
+
+
+/* =====================Main =====================*/
+
+.main-div h1{
+    text-align: center;
+    padding: 50px  0 20px;
+    color:rgb(79, 77, 77);
+}
+
+.form-div{
+    width: 50%;
+    min-height: 300px;
+    background-color: rgb(133, 174, 174);
+    
+    margin: 0 auto;
+    /* border: 2px solid rgb(105, 146, 146); */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) ;
+    padding: 80px 40px;
+
+}
+
+.form-div p{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(79, 76, 76);
+}
+.form-div input{
+    border: 0;
+    margin-bottom: 20px;
+
+}
+
+.form-div input[type="text"]{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgb(80, 100, 100);
+    min-height: 40px;
+    width: 40%;
+    border-radius: 4px;
+
+}
+
+.form-div input[type="text"]:focus{
+    border-bottom: 3px solid rgb(15, 61, 211);
+}
+
+.form-div button{
+    border: 0;
+    outline: 0;
+    min-height: 40px;
+    min-width: 100px;
+    background-color: #0071e3;
+    color: aliceblue;
+    font-size: 14px;
+    border-radius: 4px;
+
+    margin-left: 20px;
+
+}
+
+.form-div button:hover{
+    background-color: rgb(144, 135, 135);
+
+}
+/* =====================Footer =====================*/
+.footer-div{
+
+    width: inherit;
+    min-height:  75px;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
