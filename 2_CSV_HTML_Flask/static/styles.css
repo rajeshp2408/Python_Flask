@@ -1,0 +1,212 @@
+/* This is css used for header/footer */
+
+/* Base Style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* common changes */
+body{
+    background-color: rgb(145, 179, 179);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 12px 20px; */
+}
+
+header,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: inherit;     /* To inherit from main container */
+    min-height: 50px;
+    position: fixed;      /* To apply fixed header/footer */
+}
+/* ===================Header Sections=================== */
+.header-div{
+    justify-content: space-between;
+    min-width: 80%;
+    padding: 0 50px;
+    background-color: rgb(59, 50, 50);
+
+}
+
+/* Logo */
+.logo-div{
+    min-width: 15%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-weight: 700;
+    cursor: pointer;     /* To add mouse pointer */
+}
+
+/* Nav */
+.nav-div{
+    min-width: 60%;
+}
+
+.nav-div li{
+    /* display: inline-block; */ /* Either can use inline-block */
+    padding: 0px 20px;
+}
+
+/* Nav List */
+.nav_list{
+    display: flex;
+
+}
+
+/* Hover Navigation */
+
+.nav__link{
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.4s;
+    position: relative;
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav__link::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #0071e3;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav__link:hover::after{
+    opacity: 1;
+}
+
+
+/* For all li, a, button */
+li , a , button{
+    font-weight:  500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Button */
+.button-div{
+    width: 15%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    padding: 9px 20px;
+    border-radius: 50px;
+    line-height: 15px;
+
+    border: 2px solid #1bc6b5;
+}
+
+.btn-prim{
+    background-color: #389188;
+    transition: all 0.2s;
+}
+
+.btn-sec{
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+
+/* Button -Hover Effect */
+.btn-sec:hover{
+    background-color: #389188;
+}
+
+.btn-prim:hover{
+    background-color: transparent;
+}
+
+
+/* ===================Main Sections=================== */
+.main-div{
+    color: aliceblue;
+    padding: 60px 100px;
+
+}
+
+/* Table data */
+/* table div */
+.table-div{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+.table-div td, .table-div th {
+    border: 2px solid #ddd;
+    color: rgb(69, 66, 66);
+    padding: 8px;
+  }
+
+  /* .table-div tr:nth-child(even){background-color: #f2f2f2;} */
+.table-div tr:nth-child(odd){
+    background-color:rgb(146, 143, 143);
+}
+
+.table-div tr:hover {
+    background-color: #7e7b7b;
+    color: aliceblue;
+}
+
+.table-div th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Table button */
+.td-button{
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .td-more-info {background-color: #04AA6D;} /* Green */
+  .td-purchase {background-color: #008CBA;} /* Blue */
+
+/* ===================Footer Sections=================== */
+.footer-div{
+    width: 100%;
+    bottom: 0;
+
+    margin-top: 10px;
+    background-color: rgb(59, 50, 50);
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}

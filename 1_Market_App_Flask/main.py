@@ -17,4 +17,4 @@ def market_page():
     return render_template("market.html", items=items )
 
 if __name__=="__main__":
-    app.run(host="127.0.0.1", port=5588, debug=True)
+    app.run(host="127.0.0.1", port=5517, debug=True)
